@@ -7,7 +7,8 @@ pipeline{
                        echo "hello world"
                        pwd
                        sudo mkdir /home/ubuntu/test
-                       echo "Welcome" > /home/ubuntu/test/test.txt
+                       echo "Welcome" > /home/ubuntu/test
+                       touch test.txt /home/ubuntu/test2
                    '''
             }
         }
