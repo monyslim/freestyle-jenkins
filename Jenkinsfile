@@ -8,8 +8,6 @@ pipeline{
                        sudo pwd
                        sudo mkdir /home/ubuntu/test
                        echo "Welcome" > /home/ubuntu/test/test.txt
-                   
-                   
                    '''
             }
         }
