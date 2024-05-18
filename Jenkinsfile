@@ -5,7 +5,7 @@ pipeline{
             steps{
                 sh '''
                        echo "hello world"
-                       sudo pwd
+                       pwd
                        sudo mkdir /home/ubuntu/test
                        echo "Welcome" > /home/ubuntu/test/test.txt
                    '''
