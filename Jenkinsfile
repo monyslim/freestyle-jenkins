@@ -3,21 +3,23 @@ pipeline{
     stages{
         stage("testing-stage"){
             steps{
-                echo "Get the source code"
+                sh '''
+                       echo "hello world"
+                       pwd
+                       mkdir /home/ubuntu/test
+                       echo "Welcome" > /home/ubuntu/test/test.txt
+                   
+                   
+                   '''
             }
         }
     }
     stages{
         stage("Building the image"){
             steps{
-                echo "Build the image"
-            }
-        }
-    }
-    stages{
-        stage("running the image container"){
-            steps{
-                echo "container is running ...___"
+                sh '''
+                      echo "it works"
+                   '''
             }
         }
     }
