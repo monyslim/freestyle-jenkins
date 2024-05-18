@@ -12,13 +12,5 @@ pipeline{
             }
         }
     }
-    stages{
-        stage("Building the image"){
-            steps{
-                sh '''
-                      echo "it works"
-                   '''
-            }
-        }
-    }
+    
 }
