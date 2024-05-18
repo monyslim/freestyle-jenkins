@@ -5,8 +5,7 @@ pipeline{
             steps{
                 sh '''
                        echo "Hello world"
-                       sudo apt-get update 
-                       sudo apt-get upgrade -y
+                       sudo apt update
                        sudo mkdir /home/ubuntu/test
                        cd /home/ubuntu/test
                        sudo touch test.txt
