@@ -7,7 +7,8 @@ pipeline{
                        echo "Hello world"
                        sudo apt update
                        sudo mkdir /home/ubuntu/test
-                       sudo su
+                       sudo chmod 400 777 /home/ubuntu
+                       sudo chown -R /home/ubuntu/test
                        cd /home/ubuntu/test
                        touch test.txt
                        echo "Hello world" > test.txt
