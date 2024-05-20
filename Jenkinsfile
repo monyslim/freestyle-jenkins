@@ -11,6 +11,7 @@ pipeline{
                        sudo touch test.txt
                        sudo echo "Hello world" > test.txt
                        cat test.txt
+                       ------ It works-----------
                    '''
             }
         }
